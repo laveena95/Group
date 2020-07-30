@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('backend/lib/bootstrap-datepicker/css/datepicker.css') }}" />
   <link rel="stylesheet" type="text/css" href="{{ asset('backend/lib/bootstrap-daterangepicker/daterangepicker.css') }}" />
   <link rel="stylesheet" type="text/css" href="{{ asset('backend/lib/bootstrap-timepicker/compiled/timepicker.css') }}" />
-  
+
   <!-- Custom styles for this template -->
   <link href="{{ asset('backend/css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('backend/css/style-responsive.css') }}" rel="stylesheet">
@@ -243,7 +243,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="profile.html"><img src="backend/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
           <li class="mt">
             <a class="active" href="index.html">
@@ -330,7 +330,7 @@
   <script src="{{ asset('backend/lib/jquery.scrollTo.min.js') }}"></script>
   <script src="{{ asset('backend/lib/jquery.nicescroll.js') }}" type="text/javascript"></script>
   <script src="{{ asset('backend/lib/jquery.sparkline.js') }}"></script>
-  
+
   <!--common script for all pages-->
   <script src="{{ asset('backend/lib/common-scripts.js') }}"></script>
   <script type="text/javascript" src="{{ asset('backend/lib/gritter/js/jquery.gritter.js') }}"></script>
@@ -349,9 +349,9 @@
   <script type="text/javascript" src="{{ asset('backend/lib/bootstrap-timepicker/js/bootstrap-timepicker.js') }}"></script>
   <script src="{{ asset('backend/lib/advanced-form-components.js') }}"></script>
 
-  
+
 @yield('script')
-  
+
   <script type="application/javascript">
     $(document).ready(function() {
       $("#date-popover").popover({

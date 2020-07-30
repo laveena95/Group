@@ -54,7 +54,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'mobile_verified_at' => 'datetime'
     ];
 
-    // public function documents() 
+    // public function documents()
     // {
     //     return $this->hasMany('App\Document');
     // }
