@@ -22,6 +22,7 @@ Route::get('/admin', function () {
 });
 
 Route::get('/admin', 'AdminController@index');
+Auth::routes(['verify' => true]);
 
 Auth::routes();
 

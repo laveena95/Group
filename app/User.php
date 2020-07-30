@@ -8,7 +8,7 @@ use Illuminate\Notifications\Notifiable;
 use App\Document;
 use App\Role;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
 
@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username',
+        'name',
         'dob',
         'nic',
         'passport',
