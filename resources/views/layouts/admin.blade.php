@@ -257,9 +257,9 @@
               <span>User</span>
               </a>
             <ul class="sub">
-              <li class="fa fa-user"><a href="buttons.html">Service prvider</a></li>
-              <li class="fa fa-user"><a href="panels.html">Organization</a></li>
-              <li class="fa fa-user"><a href="font_awesome.html">Help Needer</a></li>
+              <li><a href="buttons.html"><i class="fa fa-user"></i>Service prvider</a></li>
+              <li><a href="panels.html"><i class="fa fa-building"></i>Organization</a></li>
+              <li><a href="font_awesome.html"><i class="fa fa-user"></i>Help Needer</a></li>
             </ul>
           </li>
           <li class="sub-menu">
@@ -282,7 +282,7 @@
           </li>
           <li class="sub-menu">
             <a href="javascript:;">
-              <i class="fa fa-envelope"></i>
+              <i class="fa fa-tasks"></i>
               <span>Messages</span>
               </a>
           </li>
