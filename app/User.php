@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Document;
+use App\Role;
 
 class User extends Authenticatable
 {
@@ -16,8 +18,21 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username',
+        'dob',
+        'nic',
+        'passport',
+        'job',
+        'income',
+        'email',
+        'phone',
+        'mobile',
+        'password',
+        'avatar',
+        'family_details'
+
     ];
+
 
     /**
      * The attributes that should be hidden for arrays.
@@ -35,5 +50,20 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'approved_at' => 'datetime',
+        'mobile_verified_at' => 'datetime'
     ];
+
+    // public function documents() 
+    // {
+    //     return $this->hasMany('App\Document');
+    // }
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class, 'role_user');
+    }
+
+    public function documents(){
+        return $this->hasMany('App\Document');
+      }
 }
