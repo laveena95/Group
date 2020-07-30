@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username',
+        'name',
         'dob',
         'nic',
         'passport',
@@ -54,7 +54,7 @@ class User extends Authenticatable
         'mobile_verified_at' => 'datetime'
     ];
 
-    // public function documents() 
+    // public function documents()
     // {
     //     return $this->hasMany('App\Document');
     // }
