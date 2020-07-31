@@ -24,6 +24,10 @@ Route::get('/admin', function () {
 Route::get('/admin', 'AdminController@index');
 Auth::routes(['verify' => true]);
 
+// mobile verification
+Route::get('/verify', 'verifyController@getVerify')->name('getverify');
+Route::post('/verify','verifyController@postVerify')->name('verify');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
